@@ -1,6 +1,5 @@
 package bigb.game.controller.shop;
 
-import bigb.game.controller.board.message.MessageReputableSafest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +9,7 @@ class ShopHelperTest {
     private ShopHelper shopHelper;
 
     @BeforeEach
-    public void setup() throws Exception {
+    public void setup() {
         this.shopHelper = new ShopHelper();
     }
 
@@ -40,7 +39,7 @@ class ShopHelperTest {
 
     @Test
     void getRandomNumber(){
-        int randomNumber = shopHelper.getRandomNumber(1, 5);
+        int randomNumber = ShopHelper.getRandomNumber(1, 5);
         assert (randomNumber>=1 && randomNumber<=5);
     }
 }

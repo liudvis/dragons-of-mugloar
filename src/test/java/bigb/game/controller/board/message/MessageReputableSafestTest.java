@@ -15,7 +15,7 @@ class MessageReputableSafestTest {
     private MessageReputableSafest messageReputableSafest;
 
     @BeforeEach
-    public void setup() throws Exception {
+    public void setup() {
         this.messageReputableSafest = new MessageReputableSafest();
     }
 
